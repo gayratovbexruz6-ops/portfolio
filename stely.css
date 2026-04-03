@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, rgb(3, 32, 58) 40%, rgb(170, 31, 31));   
+    z-index: 1000;
+}
+
+.header-list {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.kotta {
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(3, 32, 58) 40%, rgb(170, 31, 31));
+}
+
+.bita {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.bitaa {
+    text-decoration: none;
+    color: aqua;
+    border-bottom: 1px solid rgb(0, 255, 225);
+}
+
+.AQUA {
+    color: aqua;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 8px 40px;
+    background-color: aqua;
+    box-shadow: 5px 5px 20px aqua;
+}
+
+.img {
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.section {
+    color: #ffffff;
+}
+.ppp {
+    object-fit: cover;
+    width: 250px;
+    height: 300px;
+}
+
+.popt-yop {
+    color: #f52626f4;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.poy-yop-rop {
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+
+}
+
+.yop-lop {
+    color: aqua;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.olp {
+    width: 70px;
+    height: 60px;
+}
+
+.oilam {
+    padding: 20px 200px;
+}
+
+.oilam-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+}
+
+.card:hover .inner {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    color: white;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-color: rgb(28, 76, 206);
+    transform: rotateY(180deg);
+    padding: 0px 5px;
+}
+
+.ppt {
+    width: 400px;
+    height: 450px;
+}
+
+.potp {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 10%;
+}
+
+.coverflow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: 0.6s;
+
+}
+
+.card:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.cardflow:hover.card {
+    transform: rotateY(40deg);
+}
+
+.cardflow .card:hover {
+    transform: scale(1.2) rotateY(0);
+}
+
+.card {
+    transition: 0.6s;
+    border-radius: 10px;
+}
+
+.boy-yob {
+    color: aqua;
+    margin-bottom: 70px;
+}
+
+.bot-tob {
+    margin: 25px;
+    width: 200px;
+    height: 370px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+
+.guruh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 250px;
+}
+
+.coverflow {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    perspective: 1000px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.coverflow:hover .card {
+    transform: rotateY(40deg);
+
+}
+
+.coverflow .card:hover {
+    transform: scale(1.2) rotateY(0);
+}
