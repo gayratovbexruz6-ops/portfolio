@@ -1,0 +1,131 @@
+.projects {
+    padding: 110px 8%;
+}
+
+.texte {
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto 55px;
+}
+
+.texte h1 {
+    font-size: 44px;
+    color: aqua;
+    margin-bottom: 16px;
+}
+
+.texte p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #9aa9b8;
+}
+
+.kotta {
+    display: flex;
+    justify-content: center;
+}
+
+.domino {
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.cardes {
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(145deg, #121c2d, #0c1320);
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    padding-bottom: 0;
+}
+
+.cardes:hover {
+    transform: translateY(-25px) scale(1.05);
+    border-color: aqua;
+    box-shadow: 0 35px 70px rgba(0, 255, 255, 0.25);
+}
+
+.hhh {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: all 1.1s cubic-bezier(0.77, 0, 0.18, 1);
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.cardes:hover .hhh {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transform: scale(1.18);
+}
+
+.cardes h2 {
+    font-size: 23px;
+    color: white;
+    margin: 20px 22px 10px;
+    transition: all 0.5s ease;
+}
+
+.cardes:hover h2 {
+    color: aqua;
+    text-shadow: 0 0 20px aqua;
+}
+
+.cardes p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #a8b5c0;
+    padding: 0 22px 22px;
+    transition: color 0.5s ease;
+}
+
+.cardes:hover p {
+    color: #d0e8ff;
+}
+
+.cardes::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: -100%;
+    width: 40%;
+    height: 250%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+    transform: skewX(-25deg);
+    opacity: 0;
+    transition: all 1.1s ease;
+    z-index: 2;
+}
+
+.cardes:hover::before {
+    left: 160%;
+    opacity: 1;
+}
+.cardes::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, aqua, transparent);
+    transform: scaleX(0);
+    transition: transform 0.7s ease;
+}
+
+.cardes:hover::after {
+    transform: scaleX(1);
+}
+.bot-tob-obt{
+    justify-self: center;
+    align-items: center;
+    display: flex;
+}
