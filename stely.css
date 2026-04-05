@@ -90,9 +90,10 @@ body {
     color: #ffffff;
 }
 .ppp {
+    border-radius: 30px;
     object-fit: cover;
-    width: 250px;
-    height: 300px;
+    height: 350px !important;
+    width: 230px;
 }
 
 .popt-yop {
@@ -219,7 +220,6 @@ body {
 }
 
 .bot-tob {
-    margin: 25px;
     width: 200px;
     height: 370px;
     object-fit: cover;
@@ -402,4 +402,16 @@ body {
     justify-self: center;
     align-items: center;
     display: flex;
+}
+.ppy{
+    border-radius: 30px;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+.hero{
+    height: 700px;
+}
+.oilam{
+    height: 600px;
 }
