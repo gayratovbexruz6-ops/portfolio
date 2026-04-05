@@ -234,7 +234,9 @@ body {
     flex-direction: column;
     gap: 250px;
 }
-
+.hhh-btn{
+    text-decoration: none;
+}
 .coverflow {
     display: flex;
     justify-content: space-between;
